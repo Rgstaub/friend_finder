@@ -4,7 +4,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const router = require('./app/routing/htmlRoutes.js');
+const htmlRouter = require('./app/routing/htmlRoutes.js');
  
 // Create the express app
 let app = express();
@@ -18,7 +18,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 app.use(express.static('public'));
-app.use('/', router);
+app.use('/', htmlRouter);
 
 
 // Start the server and listen
