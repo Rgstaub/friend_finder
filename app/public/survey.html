@@ -8,10 +8,51 @@
 	<title>Survey</title>
 </head>
 <body>
-	<h1>Survey</h1>
+  <h1>Survey</h1>
+  
+  <button id="testButton">SEND POST</button>
+  <form>
+    <div class="form-group">
+      <label for="name-input">Name</label>
+      <input type="text" class="form-control" id="name-input" placeholder="Enter Your Name">
+    </div>
+    <div class="form-group">
+      <label for="photo-input">Photo</label>
+      <input type="text" class="form-control" id="photo-input" placeholder="Enter the address of your image">
+    </div>
+    <div class="form-group">
+      <label for="q1-select">Question 1</label>
+      <select class="form-control" id="q1-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+  </form>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src=""></script>
+  <script>
+
+
+    $("button").click( function() {
+      event.preventDefault();
+      buildDataObj();
+    });
+
+    
+
+    let DataObj = function() {
+      this.name = ${'#name-input'}.val();
+      // console.log(${'#name-input'}.val());
+      console.log(this.name);
+    }
+
+    let obj = new DataObj();
+
+  </script>
 </body>
 </html>
