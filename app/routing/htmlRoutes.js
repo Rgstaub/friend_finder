@@ -8,7 +8,7 @@ const path = require('path');
 let router = express.Router();
 
 // route to the survey page for all request with the survey path
-router.get('/survey/', (req, res) => {
+router.get('/survey', (req, res) => {
   res.sendFile(path.join(__dirname + "/../public/survey.html"));
   res.status(200);
 });

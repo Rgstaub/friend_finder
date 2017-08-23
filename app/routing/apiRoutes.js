@@ -13,13 +13,12 @@ router.get('/friends', (req, res) => {
   console.log(friends);
   res.status(200);
   res.json(friends);
-  
 }); 
 
 router.post('/friends', (req, res) => {
   console.log(req.body);
   res.send("post received");
-})
+});
 
 // route to the home page for all other paths
 // router.get('*', (req, res) => {
