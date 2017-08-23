@@ -1,7 +1,10 @@
 $("#testButton").click( function() {
   event.preventDefault();
-  let obj = new DataObj();
-  
+  var obj = new DataObj();
+  //var postUrl = path.join(__/)
+  $.post('api/friends', obj, function(response) {
+     console.log(response);
+  } )
 });
 
 let DataObj = function() {
@@ -12,5 +15,5 @@ let DataObj = function() {
     score = $(`#q${i}-select`).val();
     this.scores.push(score);
   }
-  console.log(this);
+  
 };

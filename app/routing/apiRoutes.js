@@ -16,14 +16,11 @@ router.get('/friends', (req, res) => {
 }); 
 
 router.post('/friends', (req, res) => {
+  console.log("POST");
   console.log(req.body);
-  res.send("post received");
+  res.status(200);
+  res.send("post complete");
 });
 
-// route to the home page for all other paths
-// router.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname + "/../public/home.html"));
-//   res.status(200);
-// })
 
 module.exports = router;
