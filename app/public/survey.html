@@ -30,6 +30,96 @@
         <option value="5">Strongly Agree</option>
       </select>
     </div>
+    <div class="form-group">
+      <label for="q2-select">Question 2</label>
+      <select class="form-control" id="q2-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q3-select">Question 3</label>
+      <select class="form-control" id="q3-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q4-select">Question 4</label>
+      <select class="form-control" id="q4-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q5-select">Question 5</label>
+      <select class="form-control" id="q5-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q6-select">Question 6</label>
+      <select class="form-control" id="q6-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q7-select">Question 7</label>
+      <select class="form-control" id="q7-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q8-select">Question 8</label>
+      <select class="form-control" id="q8-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q9-select">Question 9</label>
+      <select class="form-control" id="q9-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="q10-select">Question 10</label>
+      <select class="form-control" id="q10-select">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree Slightly</option>
+        <option value="3" selected>Neutral</option>
+        <option value="4">Agree Slightly</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
   </form>
 
 
@@ -37,21 +127,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>
 
-
     $("button").click( function() {
       event.preventDefault();
-      buildDataObj();
+      let obj = new DataObj();
+      
     });
 
-    
-
     let DataObj = function() {
-      this.name = ${'#name-input'}.val();
-      // console.log(${'#name-input'}.val());
-      console.log(this.name);
-    }
-
-    let obj = new DataObj();
+      this.name = $('#name-input').val().trim();
+      this.photo = $('#photo-input').val().trim();
+      this.scores = [];
+      for (let i = 1; i < 11; i++) {
+        score = $(`#q${i}-select`).val();
+        this.scores.push(score);
+      }
+      console.log(this);
+    };
 
   </script>
 </body>
