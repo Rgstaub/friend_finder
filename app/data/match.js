@@ -28,7 +28,7 @@ let match = function(obj) {
   })
   // Add the new survey data into the JSON store
   friendsArr.push(obj);
-  // return the data of the person at that index
+  // return the data of the person at the winning index
   return friendsArr[winning.index];
 }
 

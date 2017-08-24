@@ -19,5 +19,6 @@ router.get('*', (req, res) => {
   res.status(200);
 })
 
+// Ship it
 module.exports = router;
 
