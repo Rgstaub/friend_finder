@@ -3,14 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<title>Survey</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+  <title>Survey</title>
 </head>
 <body>
   <h1>Survey</h1>
   
-  <button id="testButton">SEND POST</button>
+  
   <form>
     <div class="form-group">
       <label for="name-input">Name</label>
@@ -23,6 +25,7 @@
     <div class="form-group">
       <label for="q1-select">Question 1</label>
       <select class="form-control" id="q1-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -33,6 +36,7 @@
     <div class="form-group">
       <label for="q2-select">Question 2</label>
       <select class="form-control" id="q2-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -43,6 +47,7 @@
     <div class="form-group">
       <label for="q3-select">Question 3</label>
       <select class="form-control" id="q3-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -53,6 +58,7 @@
     <div class="form-group">
       <label for="q4-select">Question 4</label>
       <select class="form-control" id="q4-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -63,6 +69,7 @@
     <div class="form-group">
       <label for="q5-select">Question 5</label>
       <select class="form-control" id="q5-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -73,6 +80,7 @@
     <div class="form-group">
       <label for="q6-select">Question 6</label>
       <select class="form-control" id="q6-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -83,6 +91,7 @@
     <div class="form-group">
       <label for="q7-select">Question 7</label>
       <select class="form-control" id="q7-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -93,6 +102,7 @@
     <div class="form-group">
       <label for="q8-select">Question 8</label>
       <select class="form-control" id="q8-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -103,6 +113,7 @@
     <div class="form-group">
       <label for="q9-select">Question 9</label>
       <select class="form-control" id="q9-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -113,6 +124,7 @@
     <div class="form-group">
       <label for="q10-select">Question 10</label>
       <select class="form-control" id="q10-select">
+        <!-- <option disabled selected value> -- Select an Response -- </option> -->
         <option value="1">Strongly Disagree</option>
         <option value="2">Disagree Slightly</option>
         <option value="3" selected>Neutral</option>
@@ -120,11 +132,13 @@
         <option value="5">Strongly Agree</option>
       </select>
     </div>
+    <button id="submit">Submit</button>
   </form>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
   <script src="client.js"></script>
 </body>
 </html>

@@ -17,9 +17,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// 
+// Set the public folder to the static
 app.use(express.static(path.join(__dirname + "/app/public/")));
 
+// Use the routers
 app.use('/api', apiRouter);
 app.use('/', htmlRouter);
 
