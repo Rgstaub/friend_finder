@@ -1,144 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Survey</title>
 </head>
+
 <body>
-  <h1>Survey</h1>
-  
-  
-  <form>
-    <div class="form-group">
-      <label for="name-input">Name</label>
-      <input type="text" class="form-control" id="name-input" placeholder="Enter Your Name">
-    </div>
-    <div class="form-group">
-      <label for="photo-input">Photo</label>
-      <input type="text" class="form-control" id="photo-input" placeholder="Enter the address of your image">
-    </div>
-    <div class="form-group">
-      <label for="q1-select">I find unpredictable situations exhilarating.</label>
-      <select class="form-control" id="q1-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q2-select">I do things on the spur of the moment.</label>
-      <select class="form-control" id="q2-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q3-select">I am more optimistic than most people.</label>
-      <select class="form-control" id="q3-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q4-select">I am more creative than most people.</label>
-      <select class="form-control" id="q4-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q5-select">I have more energy than most people.</label>
-      <select class="form-control" id="q5-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q6-select">On my time off, I like to be free to do whatever looks fun.</label>
-      <select class="form-control" id="q6-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q7-select">I would describe myself as an extremely competent person</label>
-      <select class="form-control" id="q7-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q8-select">My friends and family would say I have traditional values.</label>
-      <select class="form-control" id="q8-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q9-select">I would rather have loyal friends than interesting friends.</label>
-      <select class="form-control" id="q9-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="q10-select">I tend to be cautious, but not fearful.</label>
-      <select class="form-control" id="q10-select">
-        <!-- <option disabled selected value> -- Select an Response -- </option> -->
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree Slightly</option>
-        <option value="3" selected>Neutral</option>
-        <option value="4">Agree Slightly</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-    <button id="submit">Submit</button>
-  </form>
 
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Survey</h1>
+      <p class="lead">Answer the questions below to help us find your match</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Personal Information</h2>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name-input">Name</label>
+          <input type="text" class="form-control" id="name-input" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+          <label for="photo-input">Photo</label>
+          <input type="text" class="form-control" id="photo-input" placeholder="Enter the address of your image">
+        </div>
+      </form>
+    </div>
+    <form>
+      <h2>Survey Questions</h2>
+      <div class="form-group">
+        <label for="q1-select">I find unpredictable situations exhilarating.</label>
+        <select class="form-control" id="q1-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q2-select">I do things on the spur of the moment.</label>
+        <select class="form-control col-4" id="q2-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q3-select">I am more optimistic than most people.</label>
+        <select class="form-control" id="q3-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q4-select">I am more creative than most people.</label>
+        <select class="form-control" id="q4-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q5-select">I have more energy than most people.</label>
+        <select class="form-control" id="q5-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q6-select">On my time off, I like to be free to do whatever looks fun.</label>
+        <select class="form-control" id="q6-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q7-select">I would describe myself as an extremely competent person</label>
+        <select class="form-control" id="q7-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q8-select">My friends and family would say I have traditional values.</label>
+        <select class="form-control" id="q8-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q9-select">I would rather have loyal friends than interesting friends.</label>
+        <select class="form-control" id="q9-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q10-select">I tend to be cautious, but not fearful.</label>
+        <select class="form-control" id="q10-select">
+          <!-- <option disabled selected value> -- Select an Response -- </option> -->
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree Slightly</option>
+          <option value="3" selected>Neutral</option>
+          <option value="4">Agree Slightly</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </div>
+      <button id="submit" class="btn">Submit</button>
+    </form>
+  </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <footer>
+    <a href="api/friends">API</a>
+    <a href="/">Home</a>
+    <a href="/survey">Survey</a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
   <script src="client.js"></script>
 </body>
+
 </html>

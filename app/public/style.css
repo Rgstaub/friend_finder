@@ -1,0 +1,28 @@
+a {
+    margin: 15px;
+}
+
+footer {
+    background-color: rgb(240,240,240);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.jumbotron {
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+
+#submit {
+    float: right;
+    margin-bottom: 65px;
+}
+
+#survey {
+    margin-bottom: 10px;

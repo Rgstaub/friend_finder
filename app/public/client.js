@@ -1,14 +1,31 @@
 $("#submit").click( function() {
   event.preventDefault();
-  // Create an object with all the input data
-  var obj = new DataObj();
-  // Post the object
-  $.post('api/friends', obj, function(response) {
-     console.log(response);
-  })
-  .done( (res) => {
-    displayResult(res);
-  })
+  // Data validation to ensure that name and photo are entered
+  console.log($('#name-input').val().trim());
+  if (!$('#name-input').val().trim()) {
+    swal(
+      "Uh-oh!",
+      "You need to enter a name",
+      "warning"
+    )
+    return;
+  } else if (!$('#photo-input').val().trim()) {
+    swal(
+      "Uh-oh!",
+      "You need to link a photo",
+      "warning"
+    )    
+  } else {
+    // Create an object with all the input data
+    var obj = new DataObj();
+    // Post the object
+    $.post('api/friends', obj, function(response) {
+      console.log(response);
+    })
+    .done( (res) => {
+      displayResult(res);
+    })
+  }
 });
 
 // Constructor for the survey data object
